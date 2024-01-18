@@ -9,12 +9,14 @@ def index(request):
 
 def contact(request):
     if request.method == 'POST':
-        models.Form.object.create(
-            body = request.POST['body'],
+        models.Form.objects.create(
             name = request.POST['name'],
-            email = request.POST['email']
+            phone = request.POST['phone'],
+            email = request.POST['email'],
+            body = request.POST['body'],
+
         )
-#        return redirect('index')
+        return redirect('index')
     return render(request, 'conf/contact.html')
 
 def news(request):

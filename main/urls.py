@@ -4,8 +4,8 @@ from . import views
 urlpatterns = [
     # front
     path('', views.index, name='index'),
-    path('contact.html', views.contact, name='contact'),
-    path('news', views.news, name='news'),
+    path('conf/contact.html', views.contact, name='contact'),
+    path('conf/news.html', views.news, name='news'),
         # dashboard
     path('dashb', views.dashboard),
     path('dashb/region/create', views.create_region, name='create_region'),

@@ -900,7 +900,7 @@
                                                     {% for form in forms %}
                                                     <tr>
                                                         <td>{{forloop.counter}}</td>
-                                                        <td>{{forms.name}}</td>
+                                                        <td>{{form.name}}</td>
                                                         <td><a href="{% url 'form_update' form.id %}" class="btn btn-icon  btn-success" style="color: white;"><i class="fa fa-arrow-right"></i></a></td>
                                                     </tr>
                                                     {% endfor %}
